@@ -24,14 +24,14 @@ module.exports = {
         references: {
           model: 'pessoas',
           key: 'id'
-        },
-        categoria_id: {
-          allowNull: false,
-          type: Sequelize.INTEGER,
-          references: {
-            model: 'categorias',
-            key: 'id'
-          }
+        }
+      },
+      categoria_id: {
+        allowNull: false,
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'categorias',
+          key: 'id'
         }
       },
       createdAt: {

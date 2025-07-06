@@ -12,7 +12,7 @@ module.exports = {
       status: {
         type: Sequelize.STRING
       },
-      estudantes_id: {
+      estudante_id: {
         allowNull: false,
         type: Sequelize.INTEGER,
         references: {
@@ -20,7 +20,7 @@ module.exports = {
           key: 'id'
         }
       },
-      cursos_id: {
+      curso_id: {
         allowNull: false,
         type: Sequelize.INTEGER,
         references: {
