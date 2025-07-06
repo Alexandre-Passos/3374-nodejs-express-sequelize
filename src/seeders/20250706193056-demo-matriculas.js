@@ -3,34 +3,39 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-
-    await queryInterface.bulkInsert('categorias', [
+    await queryInterface.bulkInsert('matriculas', [
       {
-        titulo: 'Node.js',
+        estudante_id: 1,
+        curso_id: 1,
+        status: 'matriculado',
         createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
-        titulo: 'Java',
+        estudante_id: 2,
+        curso_id: 2,
+        status: 'matriculado',
         createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
-        titulo: 'Python',
+        estudante_id: 3,
+        curso_id: 3,
+        status: 'matriculado',
         createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
-        titulo: 'C#',
+        estudante_id: 4,
+        curso_id: 4,
+        status: 'matriculado',
         createdAt: new Date(),
         updatedAt: new Date(),
       },
     ], {});
-
   },
 
   async down(queryInterface, Sequelize) {
-
-    await queryInterface.bulkDelete('categorias', null, {});
+    await queryInterface.bulkDelete('matriculas', null, {});
   }
 };
